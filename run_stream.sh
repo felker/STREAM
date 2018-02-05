@@ -3,7 +3,7 @@
 #SBATCH --ntasks-per-node=28
 #SBATCH -t 10:00
 
-#module load intel
+module load intel
 #make stream icc
 
 for nthreads in 1 2 # 3 4 5 6 7 8
