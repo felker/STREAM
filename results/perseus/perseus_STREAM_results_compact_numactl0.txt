@@ -1,3 +1,8 @@
+#SBATCH -N 1
+#SBATCH -t 10:00
+#SBATCH -c 28
+# export KMP_AFFINITY=compact
+#    srun -n 1 numactl -m 0 ./stream.omp.AVX2.18M.20x.icc
 #n copy                              scale                              add                                triad
 #Best MB/s Avg time Min time Max time
 1 18639.6 0.015469 0.015451 0.015527 18311.3 0.015761 0.015728 0.015841 17227.0 0.025136 0.025077 0.025312 17194.7 0.025161 0.025124 0.025259
